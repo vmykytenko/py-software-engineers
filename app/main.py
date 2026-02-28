@@ -43,11 +43,13 @@ class AndroidDeveloper(SoftwareEngineer):
 
     def __init__(self, name: str) -> None:
 
-        pass
+        super().__init__(name)
+        self.skills.extend(["Java", "Android studio"])
 
     def create_smooth_mobile_app(self) -> None:
 
-        pass
+        print(f"{self.name} is creating a mobile app...")
+        return  "Ads every three swipes"
 
 
 class FullStackDeveloper(BackendDeveloper, FrontendDeveloper):
