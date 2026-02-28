@@ -5,11 +5,12 @@ class SoftwareEngineer:
 
     def __init__(self, name: str) -> None:
 
-        pass
+        self.name = name
+        self.skills = []
 
     def learn_skill(self, skill: str) -> None:
 
-        pass
+        self.skills.append(skill)
 
 
 class FrontendDeveloper(SoftwareEngineer):
