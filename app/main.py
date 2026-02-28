@@ -30,11 +30,13 @@ class BackendDeveloper(SoftwareEngineer):
 
     def __init__(self, name: str) -> None:
 
-        pass
+        super().__init__(name)
+        self.skills.extend(["Python", "SQL", "Django"])
 
     def create_powerful_api(self) -> None:
 
-        pass
+        print(f"{self.name} is creating an API...")
+        return "http://127.0.0.1:8000"
 
 
 class AndroidDeveloper(SoftwareEngineer):
