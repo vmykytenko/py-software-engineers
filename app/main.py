@@ -17,11 +17,13 @@ class FrontendDeveloper(SoftwareEngineer):
 
     def __init__(self, name: str) -> None:
 
-        pass
+        super().__init__(name)
+        self.skills.extend(["JavaScript", "HTML", "CSS"])
 
     def create_awesome_web_page(self) -> None:
 
-        pass
+        print(f"{self.name} is creating a webpage...")
+        return "<h1>Hello world</h1>"
 
 
 class BackendDeveloper(SoftwareEngineer):
