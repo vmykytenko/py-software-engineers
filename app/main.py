@@ -54,10 +54,6 @@ class AndroidDeveloper(SoftwareEngineer):
 
 class FullStackDeveloper(FrontendDeveloper, BackendDeveloper):
     """Class representing a developer with both Frontend and Backend skills."""
-    def __init__(self, name: str) -> None:
-        """Initialize developer with both frontend and backend skills."""
-        super().__init__(name)
-
     def create_web_application(self) -> None:
         """Start the process of creating a full-featured web application."""
         print(f"{self.name} started creating a web application...")
